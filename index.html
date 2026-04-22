@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <style>
+        body{
+        background-image: url(background1.org.jpeg);
+        z-index: -1;
+    }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Navbar */
+nav{
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+/* Logo */
+.logo{
+    font-size: 26px;
+    font-weight: bold;
+    color: #00ffe1;
+    letter-spacing: 1px;
+    pointer-events: none;
+}
+
+/* Nav Links */
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li{
+    position: relative;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 0;
+    transition: 0.3s;
+}
+
+/* Hover underline effect */
+.nav-links a::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #00ffe1;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover{
+    color: #00ffe1;
+}
+
+.nav-links a:hover::after{
+    width: 100%;
+}
+
+/* Button */
+.nav-btn{
+    padding: 8px 18px;
+    border: 1px solid #00ffe1;
+    background: transparent;
+    color: #00ffe1;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-btn:hover{
+    background: #00ffe1;
+    color: #000;
+}
+    </style>
+
+    <nav>
+    <div class="logo">BY - Manvith J.A</div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <button class="nav-btn">Login</button>
+</nav>
+
+</html>
